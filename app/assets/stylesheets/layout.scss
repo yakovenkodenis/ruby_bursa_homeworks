@@ -1,17 +1,62 @@
+* {
+    -webkit-transition: all .3s ease-out;
+       -moz-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+         -o-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+}
+
+.jumbotron {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 50em;
+    height: 40em;
+    margin: -20em 0 0 -25em;
+}
+
 h2 {
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 td {
     img {
         width: 90%;
+
         border: 1px solid #141414;
         border-radius: 5px;
     }
     ul {
+        font-size: 2em;
+
         margin: -7em 0 0 -2em;
 
         list-style-type: none;
-        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 5em;
+        h2 {
+            padding-left: 15px;
+        }
+        ul {
+            font-size: 1.4em;
+
+            margin-top: -1em;
+        }
+    }
+
+    .jumbotron {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 400px;
+        height: 400px;
+        margin-top: -15em;
+        margin-left: -15em;
     }
 }
