@@ -21,6 +21,7 @@ group :development, :test do
   gem 'guard'
   gem 'guard-livereload'
   gem 'guard-rspec'
+  gem 'shoulda-matchers'
   gem 'rspec-rails'
   gem 'capybara'
 end
